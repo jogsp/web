@@ -316,6 +316,22 @@ ul { list-style: none; }
   background: rgba(255,255,255,0.05);
 }
 
+.nav-link-legal {
+  color: #2ECC71 !important;
+  border: 1px solid rgba(46,204,113,0.2);
+  display: inline-flex;
+  align-items: center;
+}
+.nav-link-legal:hover {
+  background: rgba(46,204,113,0.08) !important;
+  border-color: rgba(46,204,113,0.4) !important;
+  color: #2ECC71 !important;
+}
+[data-theme="light"] .nav-link-legal {
+  color: #27AE60 !important;
+  border-color: rgba(39,174,96,0.25);
+}
+
 .btn-wa-nav {
   display: flex;
   align-items: center;

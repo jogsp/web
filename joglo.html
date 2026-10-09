@@ -1676,8 +1676,8 @@ document.addEventListener('input', (e) => {
 // =============================
 document.addEventListener('DOMContentLoaded', () => {
   const _sk = window._sessionKey;
-  function _h(s){var h=0,i,c;for(i=0;i<s.length;i++){c=s.charCodeAt(i);h=((h<<5)-h)+c;h|=0;}return h.toString(16);}
-  if (sessionStorage.getItem(_sk) === _h('adminjsp2019')) {
+  const expected = window._getToken(window._ph);
+  if (sessionStorage.getItem(_sk) === expected) {
     loadData();
   } else {
     // Auto-focus input password
